@@ -1,30 +1,51 @@
-# Ionic Application with Essential JS 2 for Angular.
+# Ionic Application with Essential JS 2 for Angular
 
-This repository contains a sample Ionic application that demonstrates how to integrate Syncfusion Essential JS 2 components into an Ionic framework. Syncfusion provides a wide range of high-performance, lightweight, and responsive UI components for building modern web and mobile applications.
+Repository Description: Sample Ionic + Angular app showing integration of Syncfusion Essential JS 2 components.
+
+## Project Overview
+
+This repository contains a simple Ionic application showing how to integrate Syncfusion Essential JS 2 components (for Angular) into an Ionic project. It demonstrates combining responsive Syncfusion components with Ionic.
+
+## Features
+
+- Integration examples for Syncfusion Essential JS 2 components with Angular
+- Basic Ionic app structure and example pages
+- Scripts for install, run and build
 
 ## Prerequisites
 
-Node.js (v14 or later)
-npm or yarn
-Ionic CLI (npm install -g @ionic/cli)
+- Node.js v14 or later
+- npm or yarn
+- Ionic CLI (`npm install -g @ionic/cli`)
 
 ## Steps to configure
 
-**Step 1:** Create Iconic [Application](https://ionicframework.com/docs/intro/tutorial/)
+1. Create an Ionic application following the Ionic docs: https://ionicframework.com/docs/intro/tutorial/
+2. Install the required Syncfusion packages (for example `@syncfusion/ej2-ng-grids`) as shown in the existing notes.
+3. Register modules and add components in your app module and pages. See Syncfusion Angular docs for component-specific instructions: https://ej2.syncfusion.com/angular/documentation/
 
-**Step 2:** Install Essential JS 2 for Angular Dependency `@syncfusion/ej2-ng-grids`
+## Install dependencies
 
-**Step 3:** Add application module & component in App module & html page. For Reference [link](https://ej2.syncfusion.com/angular/documentation/getting-started/Angular-CLI.html#adding-button-component)
+```bash
+npm install
+```
 
+## Run the application
 
-## Install dependencies:
+```bash
+npm start
+```
 
-`npm install`
+## Build
 
-## Run the application:
+```bash
+npm run build
+```
 
-`npm start`
+## Example
 
-## Build Application.
+Install `@syncfusion/ej2-ng-grids` and register its module:
 
-`npm run build`
+```ts
+import { GridModule } from '@syncfusion/ej2-ng-grids'; @NgModule({imports:[GridModule]}) export class AppModule{}
+```
