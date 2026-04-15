@@ -41,11 +41,3 @@ npm start
 ```bash
 npm run build
 ```
-
-## Example
-
-Install `@syncfusion/ej2-ng-grids` and register its module:
-
-```ts
-import { GridModule } from '@syncfusion/ej2-ng-grids'; @NgModule({imports:[GridModule]}) export class AppModule{}
-```
